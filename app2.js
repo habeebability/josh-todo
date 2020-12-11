@@ -8,6 +8,10 @@
    
   
   function addNew () {
+    clearAll.addEventListener('click', function clearAll(){
+      ul.innerHTML = '';
+    })
+    
     if((numInput.value.trim()) === ''){
       return;
     }
@@ -26,9 +30,6 @@
       li.remove();
     })
 
-    clearAll.addEventListener('click', function clearAll(){
-      ul.remove();
-    })
   }
   
     
